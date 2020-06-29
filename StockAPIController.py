@@ -1,5 +1,6 @@
 import requests
 
+stock_api_key = open('files/stock_api_key.txt').read()
 
 key = "7FLIE5EAL5APIPVC"
 stock = "GOOGL"
@@ -9,7 +10,7 @@ date = "2020-06-26"
 high = "2. high"
 low = "3. low"
 close = "4. close"
-url = "https://www.alphavantage.co/query?function=TIME_SERIES_" + interval_weekly + "&symbol=" + stock + "&apikey=" + key
+url = "https://www.alphavantage.co/query?function=TIME_SERIES_" + interval_weekly + "&symbol=" + stock + "&apikey=" + stock_api_key
 
 r = requests.get(url)
 
@@ -24,9 +25,9 @@ companies = ["NVDA", "AAPL", "FB", "NFLX", "MFST", "GOOGL", "WMT", "JPM"]
 
 
 'WEEKLY'
-weekly_high = round(float((r.json()["Weekly Time Series"][date][high])), 2)
+# weekly_high = round(float((r.json()["Weekly Time Series"][date][high])), 2)
 weekly_low = round(float((r.json()["Weekly Time Series"][date][low])), 2)
-weekly_close = round(float((r.json()["Weekly Time Series"][date][close])), 2)
+# weekly_close = round(float((r.json()["Weekly Time Series"][date][close])), 2)
 
 
 'Prints Statements'
@@ -34,9 +35,9 @@ weekly_close = round(float((r.json()["Weekly Time Series"][date][close])), 2)
 # print(daily_low)
 # print(daily_close)
 
-print(weekly_high)
+# print(weekly_high)
 print(weekly_low)
-print(weekly_close)
+# print(weekly_close)
 
 
 # try:
