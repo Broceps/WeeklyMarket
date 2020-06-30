@@ -23,7 +23,6 @@ class NewsAPIController:
 
 
 
-
 #for testing purposes
 week_start_date = "2020-06-22"
 week_end_date = "2020-06-26"

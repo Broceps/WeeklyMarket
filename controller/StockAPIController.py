@@ -45,4 +45,3 @@ class StockAPIController:
         result = {"Company": stock, "Highest Price": high_price, "Lowest Price": low_price,
                   "Close Price": close_price}
         return result
-
