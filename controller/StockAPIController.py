@@ -5,7 +5,7 @@ import requests
 # companies = ["NVDA", "AAPL", "FB", "NFLX", "MFST", "GOOGL", "WMT", "JPM"]
 
 class StockAPIController:
-    _stock_api_key = open('../_files/stock_api_key.txt').read()
+    _stock_api_key = open("../_files/stock_api_key.txt").read()
 
     def daily_prices(self, date, stock):
         date = date
@@ -46,3 +46,6 @@ class StockAPIController:
                   "Close Price: ": close_price}
         return result
 
+s = StockAPIController()
+data = s.weekly_prices("2020-06-26","NVDA")
+print(data)
