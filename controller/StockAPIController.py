@@ -25,9 +25,6 @@ class StockAPIController:
         result = {"Company": stock, "Highest Price ": high_price, "Lowest Price: ": low_price,
                   "Close Price: ": close_price}
         return result
-        # print(round(float((r.json()["Time Series (Daily)"][date][high])), 2))
-        # print(round(float((r.json()["Time Series (Daily)"][date][low])), 2))
-        # print(round(float((r.json()["Time Series (Daily)"][date][close])), 2))
 
 
     def weekly_prices(self, date, stock):
