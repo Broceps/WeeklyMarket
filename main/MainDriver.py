@@ -17,8 +17,8 @@ class MainDriver:
         article_data = self.news_controller.fetch_news("2020-06-22", "2020-06-26",company)
 
         print(self._newsletter_msg.format(
-            name, company, stock_data.get("Lowest Price"),stock_data.get("Highest Price"),
-            stock_data.get("Close Price"), article_data.get("article"),article_data.get("link") ))
+            name, company, stock_data.get("Lowest Price"), stock_data.get("Highest Price"),
+            stock_data.get("Close Price"), article_data.get("article"), article_data.get("link")))
 
 
 d = MainDriver()
