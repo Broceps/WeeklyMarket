@@ -22,8 +22,8 @@ class StockAPIController:
         low_price = round(float((r.json()["Time Series (Daily)"][date][low])), 2)
         close_price = round(float((r.json()["Time Series (Daily)"][date][close])), 2)
 
-        result = {"Company": stock, "Highest Price ": high_price, "Lowest Price: ": low_price,
-                  "Close Price: ": close_price}
+        result = {"Company": stock, "Highest Price": high_price, "Lowest Price": low_price,
+                  "Close Price": close_price}
         return result
 
 
@@ -42,10 +42,7 @@ class StockAPIController:
         low_price = round(float((r.json()["Weekly Time Series"][date][low])), 2)
         close_price = round(float((r.json()["Weekly Time Series"][date][close])), 2)
 
-        result = {"Company": stock, "Highest Price ": high_price, "Lowest Price: ": low_price,
-                  "Close Price: ": close_price}
+        result = {"Company": stock, "Highest Price": high_price, "Lowest Price": low_price,
+                  "Close Price": close_price}
         return result
 
-s = StockAPIController()
-data = s.weekly_prices("2020-06-26","NVDA")
-print(data)

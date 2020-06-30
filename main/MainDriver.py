@@ -10,7 +10,7 @@ class MainDriver:
                       "lowest price: ${2}, highest price: ${3}, closing price: {4}\n" \
                       "{1} was mentioned in the following articles this week:\n" \
                       "{5}\n" \
-                      "url: {6}"
+                      "link: {6}"
 
     def print_newsletter(self, name, company):
         stock_data = self.stock_controller.weekly_prices("2020-06-26",company)
