@@ -1,4 +1,5 @@
 from controller import NewsAPIController, StockAPIController
+import controller
 
 
 class MainDriver:
@@ -12,6 +13,7 @@ class MainDriver:
                       "{5}"
 
     def print_newsletter(self, name, company):
-        stock_data = StockAPIController
+        stock_data = self.S_stock_controller.
+        new = self._news_controller.
 
         print()

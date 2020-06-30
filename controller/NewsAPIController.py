@@ -7,7 +7,8 @@ class NewsAPIController:
         start = start
         end = end
         company = company
-        url = "https://newsapi.org/v2/everything?q=" + company +"&from=" + start + "&to=" + end + "&sortBy=popularity&apiKey=" + self._api_Key
+        url = "https://newsapi.org/v2/everything?q=" + company + "&from=" + start + "&to=" + end + \
+              "&sortBy=popularity&apiKey=" + self._api_Key
 
         req = requests.get(url)
         result = req.json()
