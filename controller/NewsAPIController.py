@@ -15,7 +15,7 @@ class NewsAPIController:
         articles = result["articles"]
         article = articles[0]["title"]
         link = articles[0]["url"]
-        res =  {"article":article, "link":link}
+        res = {"article": article, "link": link}
         return res
 
 
@@ -29,4 +29,4 @@ week_end_date = "2020-06-26"
 keyword = "NVDA"
 
 c = NewsAPIController()
-c.fetch_news(week_start_date, week_end_date ,keyword)
+c.fetch_news(week_start_date, week_end_date, keyword)
