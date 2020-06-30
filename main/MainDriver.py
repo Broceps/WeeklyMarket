@@ -1,5 +1,5 @@
-import NewsAPIController
-import StockAPIController
+from controller import NewsAPIController, StockAPIController
+
 
 class MainDriver:
     _news_controller = NewsAPIController()

@@ -1,6 +1,6 @@
 import requests
 
-stock_api_key = open('files/stock_api_key.txt').read()
+stock_api_key = open('../_files/stock_api_key.txt').read()
 stock = "JPM"
 date = "2020-06-26"
 

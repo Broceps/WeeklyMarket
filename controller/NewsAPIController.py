@@ -1,7 +1,7 @@
 import requests
 
 class NewsAPIController:
-    _api_Key = open("files/news_api_key.txt").read()
+    _api_Key = open("../_files/news_api_key.txt").read()
 
     def fetch_news(self, start, end, company):
         start = start
