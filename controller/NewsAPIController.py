@@ -20,13 +20,3 @@ class NewsAPIController:
         return res
 
 
-
-
-
-#for testing purposes
-week_start_date = "2020-06-22"
-week_end_date = "2020-06-26"
-keyword = "NVDA"
-
-c = NewsAPIController()
-c.fetch_news(week_start_date, week_end_date, keyword)
