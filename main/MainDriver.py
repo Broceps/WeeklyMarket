@@ -15,8 +15,8 @@ class MainDriver:
                       "link: {6}"
 
     def print_newsletter(self, name, company):
-        stock_data = self.stock_controller.weekly_prices("2020-06-26",company)
-        article_data = self.news_controller.fetch_news("2020-06-22", "2020-06-26",company)
+        stock_data = self.stock_controller.weekly_prices("2020-06-26", company)
+        article_data = self.news_controller.fetch_news("2020-06-22", "2020-06-26", company)
 
         print(self._newsletter_msg.format(
             name, company, stock_data.get("Lowest Price"), stock_data.get("Highest Price"),
