@@ -7,7 +7,9 @@ class MainDriver:
 
     _newsletter_msg = "Dear {0}, here is your weekly newsletter!\n" \
                       "--------\n{1}\n--------\n" \
-                      "lowest price: ${2}, highest price: ${3}, closing price: {4}\n" \
+                      "Lowest price: ${2} \n" \
+                      "Highest price: ${3} \n" \
+                      "Closing price: {4}\n" \
                       "{1} was mentioned in the following articles this week:\n" \
                       "{5}\n" \
                       "link: {6}"
