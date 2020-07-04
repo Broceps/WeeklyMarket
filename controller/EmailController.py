@@ -12,7 +12,7 @@ class EmailController:
         msg_final = msg_template.format(header,msg)
         server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
         server.login(self.email_un, self.email_pw)
-        server.sendmail(self.email_un, [recipient], msg_final)
+        server.sendmail(self.email_un, [recipient], msg_final.encode("utf8"))
         server.quit()
 
 

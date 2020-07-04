@@ -36,6 +36,7 @@ class StockAPIController:
         close = "4. close"
         url = "https://www.alphavantage.co/query?function=TIME_SERIES_" + interval_weekly + "&symbol=" + stock\
               + "&apikey=" + self._stock_api_key
+        print("URL : ",url,"\n\n")
         r = requests.get(url)
 
         high_price = round(float((r.json()["Weekly Time Series"][date][high])), 2)

@@ -35,6 +35,8 @@ class MainDriver:
             msg = self._newsletter_msg.format(
             name, ticker, stock_data.get("Lowest Price"), stock_data.get("Highest Price"),
             stock_data.get("Close Price"), article_data.get("article"), article_data.get("link"))
+            print(msg,"\n\n")
+
             self.email_controller.email_sendout(ticker,msg,email)
 
 
